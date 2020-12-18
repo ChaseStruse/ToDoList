@@ -19,7 +19,7 @@ const TodoState = props => {
     }
 
     return (
-        <ContactContext.Provider
+        <TodoContext.Provider
         value={
             {
                 todoItems: state.todoItems,
@@ -28,6 +28,6 @@ const TodoState = props => {
             }
         }>
             {props.children}
-        </ContactContext.Provider>
+        </TodoContext.Provider>
     );
 }
